@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>359</width>
-    <height>269</height>
+    <height>298</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -151,7 +151,7 @@
      <x>0</x>
      <y>0</y>
      <width>359</width>
-     <height>18</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menushenm">
@@ -183,5 +183,40 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnClear</sender>
+   <signal>clicked()</signal>
+   <receiver>plainTextEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>isBold</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>UpdateTextBold()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>-83</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>UpdateTextBold()</slot>
+ </slots>
 </ui>

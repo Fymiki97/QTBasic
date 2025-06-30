@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         res.qrc
+        icon.rc
 )
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
